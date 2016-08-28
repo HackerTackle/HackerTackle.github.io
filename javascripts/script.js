@@ -1,14 +1,24 @@
 $('.speaker').click(function(src) {
     var session = (src.target.id === "" ? src.target.parentElement : src.target ).id.replace(/speaker-/, '');
-    $('[name=detail-' + session + ']').css('display', 'block');
+    openSession(session);
 });
 $('.speakers li').click(function(src) {
     var session = src.target.id.replace(/img-/, '');
-    $('[name=detail-' + session + ']').css('display', 'block');
+    openSession(session);
+});
+function openSession(session){
+    $('[name=detail-' + session + ']').fadeIn(200);
+    $('[name=detail-' + session + ']').css('top', $(window).scrollTop());
+    $('#shadow').fadeIn(100);
+}
+$('#shadow').click(function(src) {
+   $('[id^=overlay]').fadeOut(400);
+   $('#shadow').fadeOut(200);
 });
 $('[id^=overlay]').click(function(src) {
-    if(src.target.id === "overlay" || $.inArray("cancel",src.target.classList) >= 0 ){
-        $('[id^=overlay]').css('display', 'none');
+    if(src.target.id==="overlay" || $.inArray("cancel",src.target.classList)>=0 ){
+      $('[id^=overlay]').fadeOut(400);
+      $('#shadow').fadeOut(200);
     }
 });
 $(".h-lane-btn").click(function() {
