@@ -1,24 +1,26 @@
-$('.speaker').click(function(src) {
+$('.speaker:not(.yet)').click(function(src) {
     var session = (src.target.id === "" ? src.target.parentElement : src.target ).id.replace(/speaker-/, '');
     openSession(session);
 });
 $('.speakers li').click(function(src) {
-    var session = src.target.id.replace(/img-/, '');
+    var session = (src.target.id === "" ? (src.target.parentElement.id ==="" ? src.target.parentElement.parentElement: src.target.parentElement) : src.target ).id.replace(/img-/, '');
     openSession(session);
 });
 function openSession(session){
-    $('[name=detail-' + session + ']').fadeIn(200);
-    $('[name=detail-' + session + ']').css('top', $(window).scrollTop());
+    $('[id=detail-' + session + ']').fadeIn(200);
+    $('[id=detail-' + session + ']').css('top', $(window).scrollTop());
     $('#shadow').fadeIn(100);
 }
-$('#shadow').click(function(src) {
-   $('[id^=overlay]').fadeOut(400);
+function closeSession(){
+   $('[class=overlay]').fadeOut(400);
    $('#shadow').fadeOut(200);
+}
+$('#shadow').click(function(src) {
+  closeSession();
 });
-$('[id^=overlay]').click(function(src) {
-    if(src.target.id==="overlay" || $.inArray("cancel",src.target.classList)>=0 ){
-      $('[id^=overlay]').fadeOut(400);
-      $('#shadow').fadeOut(200);
+$('[class^=overlay]').click(function(src) {
+    if(src.target.clasName==="overlay" || $.inArray("cancel",src.target.classList)>=0 ){
+      closeSession();
     }
 });
 $(".h-lane-btn").click(function() {
