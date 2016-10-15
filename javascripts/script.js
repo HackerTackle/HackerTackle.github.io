@@ -62,3 +62,9 @@ $(".t-lane-btn").click(function() {
     $(this).parent().find("a").css('display', 'block');
     $(this).css('display', 'none');
 });
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./service-worker.js').then(function(registration) {
+  }).catch(function(err) {
+    console.log('ServiceWorker registration failed: ', err);
+  });
+}
