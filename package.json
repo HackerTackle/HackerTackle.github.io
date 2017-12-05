@@ -4,7 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass --source-map=true stylesheets/sass/web2016.scss stylesheets/web2016.css",
+    "watch-sass": "node-sass --source-map=true --watch stylesheets/sass/web2016.scss stylesheets/web2016.css",
+    "http-server": "http-server"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,7 @@
   },
   "homepage": "https://github.com/HackerTackle/HackerTackle.github.io#readme",
   "devDependencies": {
-    "compass": "^0.1.1"
+    "http-server": "^0.9.0",
+    "node-sass": "^3.8.0"
   }
 }

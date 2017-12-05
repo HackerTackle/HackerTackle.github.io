@@ -237,11 +237,14 @@ header {
       letter-spacing: 3px;
       font-size: 22px; }
     .timetable table .h-lane-head {
-      background-color: #5a8000; }
+      background-color: #5a8000;
+      z-index: 2; }
     .timetable table .k-lane-head {
-      background-color: #007307; }
+      background-color: #007307;
+      z-index: 2; }
     .timetable table .t-lane-head {
-      background-color: #008d5a; }
+      background-color: #008d5a;
+      z-index: 2; }
     .timetable table .row-break {
       background-color: #2b3529;
       color: #9fa69e; }
@@ -478,7 +481,6 @@ footer {
 @media only screen and (min-width: 900px) {
   .nav-top {
     height: 90%; }
-
   header {
     margin-top: 92px; }
     header * {
@@ -487,21 +489,16 @@ footer {
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%); }
-
   .logo {
     display: none; }
-
   .trapezoid {
     bottom: -40px; }
-
   .speakers li:not(:nth-child(4n)) {
     margin-right: 40px; }
   .speakers i {
     bottom: 3px; }
-
   .lane-hide-btns {
     display: none; }
-
   .popup {
     width: 80%;
     position: absolute;
@@ -533,35 +530,28 @@ footer {
         line-height: 150%;
         margin-top: 15px;
         margin-bottom: 15px; }
-
   .cancel {
     position: absolute;
     top: 0;
     right: 0; }
-
   .cancel-sp {
     display: none; } }
+
 @media only screen and (max-width: 899px) {
   .anchor {
     top: -80px;
     margin-top: 80px; }
-
   h1 img {
     height: 100%;
     width: 100%; }
-
   .nav-top li.pc-only {
     display: none; }
-
   .logo {
     display: block; }
-
   section {
     padding: 45px 0; }
-
   nav {
     height: auto; }
-
   .nav-top {
     height: 50px; }
     .nav-top h1 {
@@ -579,7 +569,6 @@ footer {
       padding: 3px 6px 5px;
       position: absolute;
       right: 10px; }
-
   header {
     background: url(../images/web2016/main-sp-bg.png) center, #000101;
     background-size: cover;
@@ -606,12 +595,10 @@ footer {
       padding: 9px 0 12px;
       width: 200px;
       margin: 25px 0 65px; }
-
   .trapezoid {
     width: 30%;
     border-top: 15px solid #082a00;
     height: 15px; }
-
   .info h1 {
     margin-bottom: 15px; }
   .info p {
@@ -620,7 +607,6 @@ footer {
     font-size: 18px;
     white-space: normal;
     padding: 0; }
-
   .speakers ul {
     width: 80%;
     margin: 0 10%; }
@@ -635,10 +621,8 @@ footer {
         width: 100%; }
     .speakers li:not(:nth-child(even)) {
       margin-right: 10%; }
-
   i {
     bottom: 2px; }
-
   .timetable table, .timetable thead, .timetable tbody {
     display: block; }
   .timetable tr, .timetable th, .timetable td {
@@ -715,13 +699,10 @@ footer {
     .timetable .row-break td:first-child {
       color: #9fa69e;
       margin-bottom: -10px; }
-
   #map {
     height: 470px; }
-
   .overlay {
     margin: 0 auto; }
-
   .overlay-inner {
     width: 100%;
     font-size: 24px;
@@ -748,7 +729,6 @@ footer {
       width: 30%;
       border-bottom: 15px solid #0b1d06;
       height: 15px; }
-
   .popup {
     margin: 0 auto;
     padding: 10px;
@@ -779,11 +759,11 @@ footer {
     .popup .cancel {
       display: block;
       margin: 50px auto; }
-
   .map-overlay {
     left: 0;
     right: 0;
     padding: 10px; } }
+
 @media only screen and (min-width: 768px) and (max-width: 899px) {
   header .head01intro {
     font-size: 20px;
