@@ -1,31 +1,5 @@
-# Setup
+# HackerTackle
 
-### Install node
-
-e.g.
-- [Official site](https://nodejs.org)
-- [nodebrew](https://github.com/hokaccha/nodebrew)
-- [homebrew](http://brew.sh/)
-
-### Install node modules
-
-    $ npm install
-
-&nbsp;
-
-# Compile sass
-
-### Watch
-
-    $ npm run dev
-
-&nbsp;
-
-# Run http server (for dev)
-
-    $ npm run http-server
-     
-    Starting up http-server, serving ./
-    Available on:
-      http://127.0.0.1:8080
-    Hit CTRL-C to stop the server
+- [2016](2016)
+- [2017](2017)
+- [2018_src](2018_src)

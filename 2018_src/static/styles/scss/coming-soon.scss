@@ -1,0 +1,129 @@
+/*
+--------------------------------------------------
+  Reset Style
+--------------------------------------------------
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+strong {
+	font-weight: bold;
+}
+/*
+--------------------------------------------------
+  PC Base Style
+--------------------------------------------------
+*/
+body {
+	background:#000;
+	font-family:"Hiragino Kaku Gothic ProN", sans-serif;
+}
+nav {
+	background:#000;
+	height:80px;
+	position:fixed;
+	width:100%;
+	z-index:4;
+	top:0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.coming-soon {
+	background:url(static/images/pc_comingsoon.png) center, #000;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+	.coming-soon-txt {
+		width:384px;
+		height:278px;
+		background:url(static/images/pc_comingsoon_txt.png);
+		background-size:384px 278px;
+
+		* {
+			display:none;
+		}
+	}
+}
+footer {
+	position:fixed;
+	bottom:0;
+	width:100%;
+	padding:22px 0;
+	background:#000;
+	font-size:16px;
+	color:#6c6c6c;
+	text-align:center;
+}
+/*
+--------------------------------------------------
+  SP Style
+--------------------------------------------------
+*/
+@media only screen and (max-width: 900px) {
+	nav {
+		height:45px;
+
+		img {
+			width:132px;
+		}
+	}
+	.coming-soon {
+		background:url(static/images/sp_comingsoon.png) center, #000;
+		background-repeat:no-repeat;
+		background-size:cover;
+
+		.coming-soon-txt {
+			width:172px;
+			height:124px;
+			background:url(static/images/sp_comingsoon_txt.png);
+			background-size:172px 124px;
+		}
+	}
+	footer {
+		padding:15px 0;
+		font-size:10px;
+	}
+}
