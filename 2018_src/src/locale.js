@@ -44,7 +44,7 @@ module.exports = {
             {
                 id: 1,
                 time: "11:00 - 11:30",
-                presentation_name: "Concurrency in Rust",
+                presentation_name: "Concurrency in Rust (同時通訳あり)",
                 presentation_info: "The Rust programming language purports the bold claim that it guarantees thread safety while retaining the ability to write zero-cost abstractions. \nIn this talk we'll explore precisely how Rust can make such a claim. \nWe'll also explore the ecosystem that makes up the concurrency toolkit in Rust to see how these language principles are extended to common abstractions such as channels, thread pools, work stealing algorithms, concurrent data structures, and asynchronous I/O.",
                 presenter_name: "Alex Crichton",
                 presenter_info: "",
