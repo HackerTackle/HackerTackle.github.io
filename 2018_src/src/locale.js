@@ -162,7 +162,7 @@ module.exports = {
                 presentation_name: "全然わからない。俺たちは雰囲気でコンテナをやっている",
                 presentation_info: "皆さんは、やっていますか？ コンテナなどを...。\n運用自動化やInfrastructure as Codeの隆盛などから、さまざまな文脈でLinuxコンテナに注目が集まっています。\nそんなコンテナに関するキーワードは、LXCに始まり、Docker、runc、Kubernetes、OCI、CRI-O、果ては各種クラウドまで拡散し、枚挙にいとまがありません。\n本セッションでは、あまりに早い潮流の変化に置いていかれているような感覚を覚える方、触れてはみたものの根本的な技術の理解が追いつかない技術者のために、 コンテナ技術を上から下まで眺めて、整理することを試みます。\nその上で、Kubernetesだけではないコンテナの活用の一例として、拙作「Haconiwa」を使って何ができるか、何をしているかのお話もできればと思います。\n",
                 presenter_name: "近藤 うちお",
-                presenter_info: "",
+                presenter_info: "Rubyist and Containers Programmer",
                 company: "GMOペパボ株式会社 技術基盤チーム",
                 img: "static/images/profiles/udzura.jpg",
                 links: {
