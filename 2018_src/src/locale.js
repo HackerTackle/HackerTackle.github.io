@@ -95,11 +95,15 @@ module.exports = {
             {
                 id: 5,
                 time: "14:10 - 14:40",
-                presentation_name: "調整中",
-                presentation_info: "調整中",
-                presenter_name: "調整中",
+                presentation_name: "ディープラーニング専用ハードウェアの研究開発について",
+                presentation_info: "近年、組込みデバイスにもディープラーニングを取り込む動きが活発になってきており、特にFPGAはその書き換え可能性を活かすことで、アルゴリズムの進化に対応しつつ、低消費電力かつ高性能なディープラーニングを実現できるデバイスとして注目を集めています。しかし、アルゴリズム・GPU・数学的な背景を駆使して学習を行い、かつ、組込み機器を熟知してソフト・ハードと連携した推論を実装する技術が必要であり、実装難易度が高い状況です。私たちの研究グループでは、ディープラーニングの学習・推論を同時に開発できるGUINNESS (GUI for a Neural Network SyntheSizer)を開発しています。GUIベースの開発環境なので、Python, C++, HDL等の設計は必要なく、ニューラルネットワークの設計に注力でき、ソフトウェア技術者ユーザでもFPGA実装が可能です。今回は物体認識をFPGAに実装した事例を紹介します。",
+                presenter_name: "中原 啓貴",
                 presenter_info: "",
-                img: "static/images/profile-dummy.png" 
+                company: "東京工業大学",
+                img: "static/images/profiles/nakahara.png",
+                links: {
+                    facebook: "https://www.facebook.com/hirokinakaharaoboe"
+                }
             },
             {
                 id: 6,
@@ -284,11 +288,15 @@ module.exports = {
             {
                 id: 5,
                 time: "14:10 - 14:40",
-                presentation_name: "TBA",
+                presentation_name: "About research and development of deep learning dedicated hardware",
                 presentation_info: "TBA",
-                presenter_name: "TBA",
+                presenter_name: "Hiroki Nakahara",
                 presenter_info: "",
-                img: "static/images/profile-dummy.png"  
+                company: "Tokyo Institute of Technology",
+                img: "static/images/profiles/nakahara.png",
+                links: {
+                    facebook: "https://www.facebook.com/hirokinakaharaoboe"
+                }
             },
             {
                 id: 6,
