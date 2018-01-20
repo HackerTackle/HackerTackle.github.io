@@ -1,14 +1,14 @@
 <template>
     <transition name="popup">
-        <div class="popup" @click="closePopup">
+        <div class="popup" @click="handleClickCloseButton">
             <!-- PRESENTATION POPUP -->
-            <div class="presentation-detail" v-if="popupType == 1" @click.stop="">
+            <div class="presentation-detail" v-if="popupType === popupTypes.PRESENTATION_CONTENTS">
                 <h1>{{ presentation.presentation_name }}</h1>
                 <p>{{ presentation.presentation_info }}</p>
-                <i @click="closePopup" class="popup-close"></i>
+                <i @click="handleClickCloseButton" class="popup-close"></i>
             </div>
             <!-- PRESENTER POPUP -->
-            <div class="presenter-detail" v-else @click.stop="">
+            <div class="presenter-detail" v-else-if="popupType === popupTypes.PRESENTATION_PRESENTER">
                 <div class="popup-header">
                     <img :src="presentation.img" :alt="presentation.presenter_name">
                     <h1>{{ presentation.presenter_name }}</h1>
@@ -17,7 +17,7 @@
                     </ul>
                 </div>
                 <p v-if="presentation.presenter_info">{{ presentation.presenter_info }}</p>
-                <i @click="closePopup" class="popup-close"></i>
+                <i @click="handleClickCloseButton" class="popup-close"></i>
             </div>
         </div>
     </transition>
@@ -26,12 +26,15 @@
 <script>
 export default {
     name: 'popup',
-    props: ['presentation', 'popup', 'popupType'],
+    props: [
+      'presentation',
+      'popupType',
+      'popupTypes',
+    ],
     methods: {
-        closePopup() {
-            this.popup = false;
-            this.$emit('popupWasClosed', this.popup);
-        }
-    }
+        handleClickCloseButton: function () {
+            this.$emit('click:closeButton');
+        },
+    },
 }
 </script>

@@ -5,12 +5,12 @@
         <p class="sub-title">{{ $t("timetable.reg_time") }}　10:00-10:30</p>
         <div id="timetable_app">
             <ul class="timetable">
-                <li v-for="presentation of $t('presentations')">
-                    <div class="presentation" @click="pop(presentation.id, 1)">
+                <li v-for="presentation of presentations">
+                    <div class="presentation" @click="clickContentPopup(presentation.id)">
                         <strong>{{presentation.presentation_name}}</strong>
                         <span>{{presentation.time}}</span>
                     </div>
-                    <div class="presenter" @click="pop(presentation.id, 2)">
+                    <div class="presenter" @click="clickPresenterPopup(presentation.id)">
                         <img :src="presentation.img">
                         <p>
                             <span v-if="presentation.company" class="company">{{presentation.company}}</span>
@@ -25,7 +25,6 @@
                     </div>
                 </li>
             </ul>
-            <Popup v-if="popup" :presentation="$t('presentations')[ind]" :popup="popup" :popupType="popupType" @popupWasClosed="popup = $event"></Popup>
             <!-- <a href="static/pdf/2018timetable.pdf" target="_blank" class="pdf-download-btn">{{ $t("pdf_download") }}</a> -->
         </div>
         <a class="apply-btn" href="https://hakat.connpass.com/event/76855" target="_blank">{{ $t("btn") }}</a>
@@ -42,25 +41,18 @@
 </template>
 
 <script>
-import Popup from './Popup'
-
 export default {
     name: 'timetable',
-    components: {
-        Popup
+    props: [
+      'presentations',
+    ],
+    methods: {
+        clickContentPopup: function(presentationId) {
+          this.$emit('click:presentation:content', presentationId);
+        },
+        clickPresenterPopup: function(presentationId) {
+          this.$emit('click:presentation:presenter', presentationId);
+        },
     },
-    data() {
-    	return {
-	        popup: false,
-	        ind: 1
-	    }
-	},
-	methods: {
-		pop(index, popupType) {
-			this.ind = index;
-			this.popup = true;
-			this.popupType = popupType;
-		}
-	}
 }
 </script>
