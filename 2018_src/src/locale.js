@@ -249,8 +249,8 @@ module.exports = {
             {
                 id: 2,
                 time: "11:40 - 12:10",
-                presentation_name: "None, Type and program",
-                presentation_info: 'In this session, I will ponder on the meaning of "Mu," or nothingness, in the context of a program. \nWhen we code, Mu  appears everywhere in various forms: undefined,  pre-initialization, post deletion, 0, empty string, empty array, etc... \nOnce you make a mistake in expression, you will end up with redundant codes and bugs. \nI\'ll introduce the expression of "Mu" found in various programing languages while focusing on its benefits and shortcomings. \nAlso, by citing the most recent episode in how I failed to handle Mu, I would like to think about how to approach “Mu” as well as how to get along with it. \n  ',
+                presentation_name: "Empty, Type and program",
+                presentation_info: 'In this session, I will ponder on the meaning of “Empty”, in the context of a program. \nWhen we code, “Empty” appears everywhere in various forms: undefined,  pre-initialization, post deletion, 0, empty string, empty array, etc... \nOnce you make a mistake in expression, you will end up with redundant codes and bugs. \nI\'ll introduce the expression of “Empty” found in various programing languages while focusing on its benefits and shortcomings. \nAlso, by citing the most recent episode in how I failed to handle “Empty”, I would like to think about how to approach “Empty” as well as how to get along with it.',
                 presenter_name: "tarunon",
                 presenter_info: "",
                 company: "Mercari, Inc.",
