@@ -406,6 +406,10 @@ header {
 			.presentation {
 				background:#fff;
 				box-shadow:5px 5px 9px -4px rgba(173,173,173,0.6);
+				transition: all 0.3s 0s ease;
+				&:hover {
+					box-shadow:10px 10px 18px -4px rgba(173,173,173,0.6);				
+				}
 			}
 			.event {
 				background:#e1e1e1;
@@ -438,6 +442,25 @@ header {
 				}
 				.company {
 					margin-right:4px;
+				}
+				p {
+					border-bottom-style: solid;
+					border-bottom-width: medium;
+					border-bottom-color: #f6f6f6;
+					transition: all 0.3s 0s ease;
+				}
+				&:hover {
+					img {
+						height:42px;
+						width:42px;
+						margin-top:-1px;
+						margin-bottom:-1px;
+						margin-left:-1px;
+						margin-right:11px;
+					}
+					p {
+						border-bottom-color: #9a9999;
+					}
 				}
 			}
 		}
@@ -531,6 +554,14 @@ header {
 						height:25px;
 						width:25px;
 						margin-right:8px;
+					}
+					&:hover {
+						img {
+							height:26px;
+							width:26px;
+							margin-right:8px;
+							margin-bottom:0px;
+						}
 					}
 				}
 			}
