@@ -20,5 +20,3 @@ new Vue({
 	components: { App },
 	i18n
 })
-
-export const eventBus = new Vue();

@@ -29,23 +29,19 @@
             <!-- <a href="static/pdf/2018timetable.pdf" target="_blank" class="pdf-download-btn">{{ $t("pdf_download") }}</a> -->
         </div>
         <a class="apply-btn" href="https://hakat.connpass.com/event/76855" target="_blank">{{ $t("btn") }}</a>
+
         <h3 class="sub-title">SPONSORS</h3>
-        <br/>
-        <a href="https://linecorp.com/" target="_blank"><img class="line-logo" src="static/images/line.png" alt="LINE" width="250"></a>
-        <br/>
-        <br/>
-        <br/>
-        <a href="https://www.mozilla.org/" target="_blank"><img class="line-logo" src="static/images/moz-logo-bw-rgb.png" alt="Mozilla" width="180"></a>
-        <br/>
-        <br/>
-        <br/>
-        <a href="https://www.ulsystems.co.jp/" target="_blank"><img class="line-logo" src="static/images/ul-logo.png" alt="Ulsystems" width="140"></a>
+
+        <ul class="sponsor-list">
+            <li class="sponsor-line"><a href="https://linecorp.com/" target="_blank"><img src="static/images/line.png" alt="LINE"></a></li>
+            <li class="sponsor-mozilla"><a href="https://www.mozilla.org/" target="_blank"><img src="static/images/moz-logo-bw-rgb.png" alt="Mozilla"></a></li>
+            <li class="sponsor-ulsystems"><a href="https://www.ulsystems.co.jp/" target="_blank"><img src="static/images/ul-logo.png" alt="Ulsystems"></a></li>
+        </ul>
     </div>
 </section>
 </template>
 
 <script>
-import { eventBus } from '../main'
 import Popup from './Popup'
 
 export default {

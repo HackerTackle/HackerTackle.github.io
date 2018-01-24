@@ -360,7 +360,7 @@ header {
 .sub-title {
 	font-size:16px;
 	color:#4c4c4c;
-	margin-bottom:16px;
+	margin-bottom:35px;
 	letter-spacing:2px;
 }
 .presentation,
@@ -445,7 +445,6 @@ header {
 	.pdf-download-btn {
 		position:absolute;
 		right:0;
-		margin-top:24px;
 		font-size:18px;
 		color:#a8a8a8;
 		font-weight:bold;
@@ -462,10 +461,30 @@ header {
 		}
 	}
 }
+.sponsor-list {
+	li {
+		&:not(:last-child) {
+			margin-bottom:35px;
+		}
+		a {
+			display:block;
+		}
+		&.sponsor-line img {
+			width:250px;
+		}
+		&.sponsor-mozilla img {
+			width:180px;
+		}
+		&.sponsor-ulsystems img {
+			width:140px;
+		}
+	}
+}
 
 @media only screen and (max-width:$sp-breakpoint) {
 	.timetable-speakers {
 		padding:50px 0;
+		margin-bottom:24px;
 
 		.apply-btn {
 			display:none;
@@ -478,6 +497,7 @@ header {
 	}
 	.sub-title {
 		font-size:9px;
+		margin-bottom:20px;
 	}
 	.line-logo {
 		height:23px;
@@ -485,7 +505,7 @@ header {
 	}
 	#timetable_app {
 		padding:0 30px;
-		margin-top:30px;
+		margin:30px 0 55px;
 
 		.timetable {
 			li {
@@ -519,13 +539,28 @@ header {
 			position:static;
 			display:inline-block;
 			font-size:11px;
-			margin-bottom:55px;
 
 			&:after {
 				height:11px;
 				width:9px;
 				background:url(../../../static/images/download-arrow.png);
 				background-size:9px 11px;
+			}
+		}
+	}
+	.sponsor-list {
+		li {
+			&:not(:last-child) {
+				margin-bottom:20px;
+			}
+			&.sponsor-line img {
+				width:125px;
+			}
+			&.sponsor-mozilla img {
+				width:90px;
+			}
+			&.sponsor-ulsystems img {
+				width:70px;
 			}
 		}
 	}

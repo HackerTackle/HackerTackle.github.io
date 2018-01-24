@@ -16,7 +16,7 @@
                         <li v-for="(value, key) in presentation.links" class="icon" :class="key"><a :href="value" target="_blank">{{ key }}</a></li>
                     </ul>
                 </div>
-                <p>{{ presentation.presenter_info }}</p>
+                <p v-if="presentation.presenter_info">{{ presentation.presenter_info }}</p>
                 <i @click="closePopup" class="popup-close"></i>
             </div>
         </div>
