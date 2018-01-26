@@ -289,7 +289,7 @@ module.exports = {
                 id: 5,
                 time: "14:10 - 14:40",
                 presentation_name: "About research and development of deep learning dedicated hardware",
-                presentation_info: "TBA",
+                presentation_info: "In recent years, integrating deep learning into embedded devices has become more prevalent. \nIn particular, field-programmable gate array (FPGA) has been gaining traction as a device that can actualize deep learning while keeping up with the evolving algorithms with its low electricity consumption that can deliver high performance due to its reconfigurable properties. \nHowever, the level of difficulty in implementation remains high at this point. \nThis is due to the fact that it requires an algorithmic, GPU and arithmetic learning, in addition to the possession of deep knowledge on the embedded device as well as the interface between software and hardware. \nAt our research group, we are developing GUI for Neural Network SyntheSizer (GUINNESS) which can create learning as well as the point of inference for deep learning. \nBecause it is a GUI-based development environment, it is not necessary for any design based on Python, C++ and HDL, etc. \nThis allows us to focus on the designing of the neural network, making it possible for software engineer user to implement FPGA. \nHere, I am going to talk about a case example where we implemented objection recognition into FPGA.",
                 presenter_name: "Hiroki Nakahara",
                 presenter_info: "",
                 company: "Tokyo Institute of Technology",
@@ -301,10 +301,10 @@ module.exports = {
             {
                 id: 6,
                 time: "14:50 - 15:20",
-                presentation_name: "TBA",
-                presentation_info: "TBA",
+                presentation_name: "Beyond Debugging: Testing, Degubbing, and the Technology Beyond",
+                presentation_info: "Testing and reviewing are common place at various development sites. \nBut what are these so-called “bugs” that we come up against while we are conducting quality assurance tasks? To begin with, how we describe these bugs and the way we have been intuitively dealing with them is akin to an MD treating a patient without knowing what the pathology is. \nIn this session, we’re going to tackle these bugs. \nThe three problems that I’m going to pose are: 1. \nthere are no definitions for what a bug is, 2. \nthere are no methods to express bugs, and 3. \nthe detection method of a bug is not consistent. \nIn this session, I am going to talk about the defined schema of defects, defect models, and detection techniques of defect indications. \nSubsequently, I am going to demonstrate how to automatically analyze and classify bugs by using machine learning. \nBefore we start chasing after the ever-disappearing cutting-edge development technologies, we need to leave behind the bugs we have encountered up until now. \nI believe this is the “asset” which the engineers of the next generation should focus on the most. \nI will be most grateful if I can be of assistance for all the future engineers.",
                 presenter_name: "Nobuhiro Hosokawa",
-                presenter_info: "",
+                presenter_info: "Mr. Hosokawa joined IBM Japan in 1992. \nAfter having worked as an SE, he launched the Quality Inspection team under the Quality Assurance unit in 1999. \nHe was in charge of propagating quality engineering as well as defect detection technology at the upstream phase in and outside of IBM. \nIn 2005, at the IBM Laboratory in Raleigh, NC, and in Austin, TX, he was assigned to the Quality Assurance team in charge of general-purpose OS and commercial Unix. \nHe conducted quality assurance checks based on IBM’s QI method. \nHe currently studies defects at the IBM Tokyo Laboratory, and is also active in incorporating new technology in the arenas of academia as well as at the ground level. \nFor example, he studies the life-span of systems, and conducts research on the quality assurance method of AI and IoT while offering business support at the same time.",
                 company: "IBM Japan",
                 img: "static/images/profiles/hosokawa.jpg",
                 links: {
@@ -314,10 +314,10 @@ module.exports = {
             {
                 id: 7,
                 time: "15:20 - 15:50",
-                presentation_name: "TBA",
-                presentation_info: "TBA",
+                presentation_name: "It is fantasy that Scrum is difficult - Redefinition of Passion",
+                presentation_info: "Up until 2016, we tried to make improvements to our delivery practice by utilizing metrics, incorporating shortened sprint period, and by choosing a product owner (PO) or a scrum master (SM) through lottery. \nWe have also broken many rules in the scrum guide. \nWe don’t think scrum is difficult and believe that anyone can do it. \nAlthough the products we develop have changed substantially, we never felt scrum to be a challenge. \nWhat’s more, when we introduced scrum to 40 college students, they were able to have a grasp over a one-day sprint in one week’s time. \nMaybe the inherent challenge we felt in scrum was just an illusion. \nIn 2017, our team established several practices based on our experiences. \nWe have set our sprint period to one hour, guaranteeing a 25-minute response time in resolving bottlenecks arising within the team—a development process which allows us to be constantly aware of the break-even point of the utilization factor of human resources. \nAs a result, we conducted more than 35 reviews and 30 look-backs in just one week. \nThe items we fixed in one week reached 20 at the most, and by eliminating such waste, we have achieved twice the amount of results within six months. \nI am going to talk about our deliberate learning method, as well as how we learn from incidents through the context of scrum to maximize team performance.",
                 presenter_name: "Kyon",
-                presenter_info: "",
+                presenter_info: "We are responsible for the customized development of software mainly in the Nagoya area. \nWe focus on the practical application of scrum, software configuration management, and Test-Driven Development (TDD). \nThe programming language we use is Groovy Scheme Scala F#. ",
                 img: "static/images/profiles/kyon.png",
                 links: {
                     twitter: "https://twitter.com/kyon_mm"
