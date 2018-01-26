@@ -172,7 +172,7 @@ module.exports = {
             {
                 id: 11,
                 time: "17:50 - 18:20",
-                presentation_name: "調整中",
+                presentation_name: "実践！スタンプ屋さんの開発運用",
                 presentation_info: "調整中",
                 presenter_name: "佐藤 春旗",
                 presenter_info: "",
