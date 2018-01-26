@@ -172,7 +172,7 @@ module.exports = {
             {
                 id: 11,
                 time: "17:50 - 18:20",
-                presentation_name: "調整中",
+                presentation_name: "実践！スタンプ屋さんの開発運用",
                 presentation_info: "調整中",
                 presenter_name: "佐藤 春旗",
                 presenter_info: "",
@@ -314,7 +314,7 @@ module.exports = {
             {
                 id: 7,
                 time: "15:20 - 15:50",
-                presentation_name: "It is fantasy that Scrum is difficult - Redefinition of Passion",
+                presentation_name: "It is a fantasy that Scrum is difficult -Redefinition of Passion-",
                 presentation_info: "Up until 2016, we tried to make improvements to our delivery practice by utilizing metrics, incorporating shortened sprint period, and by choosing a product owner (PO) or a scrum master (SM) through lottery. \nWe have also broken many rules in the scrum guide. \nWe don’t think scrum is difficult and believe that anyone can do it. \nAlthough the products we develop have changed substantially, we never felt scrum to be a challenge. \nWhat’s more, when we introduced scrum to 40 college students, they were able to have a grasp over a one-day sprint in one week’s time. \nMaybe the inherent challenge we felt in scrum was just an illusion. \nIn 2017, our team established several practices based on our experiences. \nWe have set our sprint period to one hour, guaranteeing a 25-minute response time in resolving bottlenecks arising within the team—a development process which allows us to be constantly aware of the break-even point of the utilization factor of human resources. \nAs a result, we conducted more than 35 reviews and 30 look-backs in just one week. \nThe items we fixed in one week reached 20 at the most, and by eliminating such waste, we have achieved twice the amount of results within six months. \nI am going to talk about our deliberate learning method, as well as how we learn from incidents through the context of scrum to maximize team performance.",
                 presenter_name: "Kyon",
                 presenter_info: "We are responsible for the customized development of software mainly in the Nagoya area. \nWe focus on the practical application of scrum, software configuration management, and Test-Driven Development (TDD). \nThe programming language we use is Groovy Scheme Scala F#. ",
