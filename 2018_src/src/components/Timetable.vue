@@ -26,17 +26,9 @@
                 </li>
             </ul>
             <Popup v-if="popup" :presentation="$t('presentations')[ind]" :popup="popup" :popupType="popupType" @popupWasClosed="popup = $event"></Popup>
-            <!-- <a href="static/pdf/2018timetable.pdf" target="_blank" class="pdf-download-btn">{{ $t("pdf_download") }}</a> -->
+            <a href="static/pdf/2018timetable.pdf" target="_blank" class="pdf-download-btn">{{ $t("pdf_download") }}</a>
         </div>
         <a class="apply-btn" href="https://hakat.connpass.com/event/76855" target="_blank">{{ $t("btn") }}</a>
-
-        <h3 class="sub-title">SPONSORS</h3>
-
-        <ul class="sponsor-list">
-            <li class="sponsor-line"><a href="https://linecorp.com/" target="_blank"><img src="static/images/line.png" alt="LINE"></a></li>
-            <li class="sponsor-mozilla"><a href="https://www.mozilla.org/" target="_blank"><img src="static/images/moz-logo-bw-rgb.png" alt="Mozilla"></a></li>
-            <li class="sponsor-ulsystems"><a href="https://www.ulsystems.co.jp/" target="_blank"><img src="static/images/ul-logo.png" alt="Ulsystems"></a></li>
-        </ul>
     </div>
 </section>
 </template>

@@ -38,6 +38,24 @@
 
     <Timetable></Timetable>
 
+    <section class="sponsors">
+        <h2 class="sponsor-title">SPONSORS</h2>
+        <ul class="sponsor-list">
+            <li><a href="https://linecorp.com/" target="_blank">
+                <h3>PLATINUM</h3>
+                <img src="static/images/line.png" alt="LINE">
+            </a></li>
+            <li><a href="https://www.mozilla.org/" target="_blank">
+                <h3>GOLD</h3>
+                <img src="static/images/moz-logo-bw-rgb.png" alt="Mozilla">
+            </a></li>
+            <li><a href="https://www.ulsystems.co.jp/" target="_blank">
+                <h3>SILVER</h3>
+                <img src="static/images/ul-logo.png" alt="Ulsystems">
+            </a></li>
+        </ul>
+    </section>    
+
     <section class="map-container">
         <div id="map"></div>
         <div class="map-overlay"><div class="map-overlay-inner">
