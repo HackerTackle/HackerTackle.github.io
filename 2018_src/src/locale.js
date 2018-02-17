@@ -184,9 +184,9 @@ module.exports = {
                 time: "18:20 - 18:30",
                 presentation_name: "スポンサーセッション",
                 presentation_info: "調整中",
-                presenter_name: "調整中",
+                presenter_name: "和田 充史",
                 presenter_info: "",
-                company: "LINE株式会社",
+                company: "LINE Fukuoka株式会社",
                 img: "static/images/profile-dummy.png",
             }
         ]
@@ -377,9 +377,9 @@ module.exports = {
                 time: "18:20 - 18:30",
                 presentation_name: "Sponsor session",
                 presentation_info: "TBA",
-                presenter_name: "TBA",
+                presenter_name: "Atsushi Wada",
                 presenter_info: "",
-                company: "LINE Corporation",
+                company: "LINE Fukuoka Corporation",
                 img: "static/images/profile-dummy.png",
             }
         ]
